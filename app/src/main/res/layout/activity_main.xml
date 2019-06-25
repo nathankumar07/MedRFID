@@ -40,7 +40,8 @@
         android:textColorLink="@color/cardview_light_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#fff"/>
 
     <EditText
         android:id="@+id/etPassword"
@@ -59,7 +60,8 @@
         android:textColorLink="@color/cardview_light_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        android:backgroundTint="#fff"/>
 
     <TextView
         android:id="@+id/txtForgotPassword"
