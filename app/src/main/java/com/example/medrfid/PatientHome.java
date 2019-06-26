@@ -3,6 +3,7 @@ package com.example.medrfid;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -13,9 +14,9 @@ public class PatientHome extends AppCompatActivity {
     private String username = "ERROR";
     private TextView welcome;
     private TextView antibodies;
-    private Button info;
-    private Button message;
-    private Button history;
+    private CardView info;
+    private CardView message;
+    private CardView history;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +31,9 @@ public class PatientHome extends AppCompatActivity {
         //CODE TO FETCH # of antibodies and store into numAntibodies
         antibodies.setText(Integer.toString(numAntibodies));
 
-        info = (Button) findViewById(R.id.info_button);
-        message = (Button) findViewById(R.id.msg_button);
-        history = (Button) findViewById(R.id.history_button);
+        info = (CardView) findViewById(R.id.info_card);
+        message = (CardView) findViewById(R.id.message_card);
+        history = (CardView) findViewById(R.id.history_card);
 
         info.setOnClickListener(new View.OnClickListener() {
             @Override
