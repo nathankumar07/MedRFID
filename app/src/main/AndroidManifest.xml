@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Alerts"></activity>
+        <activity android:name=".sketch"></activity>
+        <activity android:name=".Alerts" />
         <activity android:name=".PatientInfo" />
         <activity android:name=".PatientMessage" />
         <activity android:name=".History" />

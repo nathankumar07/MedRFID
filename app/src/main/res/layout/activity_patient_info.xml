@@ -4,6 +4,159 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_blurred"
     tools:context=".PatientInfo">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="165dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="230dp"
+        android:layout_marginRight="230dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="#C8FFFFFF"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Resources"
+            android:textColor="#200761"
+            android:textSize="30sp" />
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="395dp"
+        android:layout_height="645dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="123dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/a1"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    app:srcCompat="@drawable/a" />
+
+                <TextView
+                    android:id="@+id/atext1"
+                    android:layout_width="304dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|right"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labo"
+                    android:textColor="#200761"
+                    android:textSize="24sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="295dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/b1"
+                    android:layout_width="match_parent"
+                    android:layout_height="218dp"
+                    android:layout_gravity="center|top"
+                    app:srcCompat="@drawable/temp_large_image" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="79dp"
+                    android:layout_gravity="bottom|center"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do "
+                    android:textColor="#200761"
+                    android:textSize="24sp" />
+            </android.support.v7.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/a2"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    app:srcCompat="@drawable/a" />
+
+                <TextView
+                    android:id="@+id/atext2"
+                    android:layout_width="304dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|right"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labo"
+                    android:textColor="#200761"
+                    android:textSize="24sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="295dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/b2"
+                    android:layout_width="match_parent"
+                    android:layout_height="218dp"
+                    android:layout_gravity="center|top"
+                    app:srcCompat="@drawable/temp_large_image"/>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="79dp"
+                    android:layout_gravity="bottom|center"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do "
+                    android:textColor="#200761"
+                    android:textSize="24sp" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
