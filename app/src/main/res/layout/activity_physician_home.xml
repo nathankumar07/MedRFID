@@ -8,7 +8,7 @@
     tools:context=".PhysicianHome">
 
     <android.support.v7.widget.CardView
-        android:id="@+id/cvMenuDock"
+        android:id="@+id/cvAlert4"
         android:layout_width="323dp"
         android:layout_height="300dp"
         android:layout_marginStart="8dp"
