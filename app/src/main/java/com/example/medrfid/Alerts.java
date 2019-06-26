@@ -8,12 +8,12 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class PhysicianHome extends AppCompatActivity {
+public class Alerts extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_physician_home);
+        setContentView(R.layout.activity_alerts);
         transparentStatusAndNavigation();
     }
 
