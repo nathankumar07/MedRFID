@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class PatientHome extends AppCompatActivity {
@@ -18,9 +19,12 @@ public class PatientHome extends AppCompatActivity {
     private String username = "ERROR";
     private TextView welcome;
     private TextView antibodies;
-    private CardView info;
-    private CardView message;
-    private CardView history;
+    private Button info;
+    private Button message;
+    private Button history;
+    private ImageView infoIcon;
+    private ImageView messageIcon;
+    private ImageView historyIcon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,11 +40,23 @@ public class PatientHome extends AppCompatActivity {
         //CODE TO FETCH # of antibodies and store into numAntibodies
         antibodies.setText(Integer.toString(numAntibodies));
 
-        info = (CardView) findViewById(R.id.info_card);
-        message = (CardView) findViewById(R.id.message_card);
-        history = (CardView) findViewById(R.id.history_card);
+        info = (Button) findViewById(R.id.info_button);
+        message = (Button) findViewById(R.id.message_button);
+        history = (Button) findViewById(R.id.history_button);
+
+        infoIcon = (ImageView) findViewById(R.id.info_icon);
+        messageIcon = (ImageView) findViewById(R.id.message_icon);
+        historyIcon = (ImageView) findViewById(R.id.history_icon);
 
         info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PatientHome.this, PatientInfo.class);
+                startActivity(intent);
+            }
+        });
+
+        infoIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(PatientHome.this, PatientInfo.class);
@@ -56,7 +72,23 @@ public class PatientHome extends AppCompatActivity {
             }
         });
 
+        messageIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PatientHome.this, PatientMessage.class);
+                startActivity(intent);
+            }
+        });
+
         history.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PatientHome.this, History.class);
+                startActivity(intent);
+            }
+        });
+
+        historyIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(PatientHome.this, History.class);
