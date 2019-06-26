@@ -22,7 +22,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_two_transparent" />
+        app:srcCompat="@drawable/logo_two_transparent_blue" />
 
     <EditText
         android:id="@+id/etUsername"
