@@ -71,7 +71,7 @@
                     android:layout_width="304dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center|right"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labo"
+                    android:text="Did you know targeted therapy blocks growth of cancer cells by finding a unique protein on the cell?"
                     android:textColor="#200761"
                     android:textSize="24sp" />
 
@@ -83,7 +83,7 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="295dp"
+                android:layout_height="320dp"
                 app:cardCornerRadius="20dp">
 
                 <ImageView
@@ -96,9 +96,9 @@
                 <TextView
                     android:id="@+id/text1"
                     android:layout_width="match_parent"
-                    android:layout_height="79dp"
+                    android:layout_height="105dp"
                     android:layout_gravity="bottom|center"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do "
+                    android:text="Targeted therapy has heightened effectiveness and reduced toxicity to healthy cells"
                     android:textColor="#200761"
                     android:textSize="24sp" />
             </android.support.v7.widget.CardView>
@@ -109,34 +109,7 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:cardCornerRadius="20dp">
-
-                <ImageView
-                    android:id="@+id/a2"
-                    android:layout_width="90dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left"
-                    app:srcCompat="@drawable/a" />
-
-                <TextView
-                    android:id="@+id/atext2"
-                    android:layout_width="304dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center|right"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labo"
-                    android:textColor="#200761"
-                    android:textSize="24sp" />
-
-            </android.support.v7.widget.CardView>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="10dp" />
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="295dp"
+                android:layout_height="320dp"
                 app:cardCornerRadius="20dp">
 
                 <ImageView
@@ -144,14 +117,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="218dp"
                     android:layout_gravity="center|top"
-                    app:srcCompat="@drawable/temp_large_image"/>
+                    app:srcCompat="@drawable/support_image_one" />
 
                 <TextView
-                    android:id="@+id/text2"
+                    android:id="@+id/btext2"
                     android:layout_width="match_parent"
-                    android:layout_height="79dp"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do "
+                    android:text="At AbbVie, we know that treatment effects many aspects of life. To help with coping, feel free to read more about enhancing life during therapy"
                     android:textColor="#200761"
                     android:textSize="24sp" />
             </android.support.v7.widget.CardView>
