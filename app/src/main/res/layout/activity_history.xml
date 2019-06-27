@@ -4,6 +4,144 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_blurred"
     tools:context=".History">
 
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="165dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="230dp"
+        android:layout_marginRight="230dp"
+        android:layout_marginBottom="21dp"
+        app:cardBackgroundColor="#C8FFFFFF"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="History"
+            android:textColor="#200761"
+            android:textSize="30sp" />
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="326dp"
+        android:layout_height="311dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5"
+        app:srcCompat="@drawable/history_graph" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvAlert1"
+        android:layout_width="327dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="24dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="30px"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/cvAlert2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <ImageView
+            android:id="@+id/imgStatus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/checkmark" />
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:text="Low Tag Count"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="55dp"
+            android:text="Good Work! Getting Better!"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvAlert2"
+        android:layout_width="327dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="52dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="30px"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvAlert1">
+
+        <ImageView
+            android:id="@+id/imgStatus2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/orange_warning" />
+
+        <TextView
+            android:id="@+id/txtStatus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:text="Call Physician"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDetails2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="55dp"
+            android:text="You are due for a checkup"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+    </android.support.v7.widget.CardView>
 </android.support.constraint.ConstraintLayout>

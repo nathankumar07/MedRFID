@@ -15,8 +15,8 @@ import android.widget.TextView;
 
 public class PatientHome extends AppCompatActivity {
 
-    private int numAntibodies = 0;
-    private String username = "ERROR";
+    private int numAntibodies = 200;
+    private String username = "John Doe";
     private TextView welcome;
     private TextView antibodies;
     private Button info;
